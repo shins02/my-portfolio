@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Engineering to AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/dist/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #ededed;
+            scroll-behavior: smooth;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .glass-card:hover {
+            border-color: #3b82f6;
+            transform: translateY(-5px);
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #9333ea);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .timeline-border {
+            border-left: 2px solid #262626;
+        }
+
+        .badge {
+            background: rgba(59, 130, 246, 0.1);
+            color: #60a5fa;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            border: 1px solid rgba(59, 130, 246, 0.3);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 px-6 py-4 flex justify-between items-center bg-black/80 backdrop-blur-md border-b border-white/10">
+        <div class="text-xl font-bold tracking-tighter">PORTFOLIO</div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-400">
+            <a href="#about" class="hover:text-blue-500 transition">소개</a>
+            <a href="#experience" class="hover:text-blue-500 transition">경력</a>
+            <a href="#education" class="hover:text-blue-500 transition">학력</a>
+            <a href="#skills" class="hover:text-blue-500 transition">자격증</a>
+            <a href="#future" class="hover:text-blue-500 transition">비전</a>
+        </div>
+        <a href="mailto:your-email@example.com" class="text-xs px-4 py-2 bg-white text-black font-bold rounded-full hover:bg-blue-500 hover:text-white transition uppercase">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="min-h-screen flex flex-col justify-center items-center pt-20 px-6 text-center">
+        <div class="mb-6 inline-block py-1 px-3 border border-blue-500/30 rounded-full bg-blue-500/5 text-blue-400 text-xs font-semibold tracking-widest uppercase animate-pulse">
+            Future AI Engineer
+        </div>
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
+            현장의 정밀함에서<br>
+            <span class="gradient-text">데이터의 지능으로</span>
+        </h1>
+        <p class="max-w-2xl text-gray-400 text-lg md:text-xl leading-relaxed mb-10">
+            5년 3개월의 기계/금형 현장 경험과 전문 지식을 바탕으로,<br>
+            이제 <strong>Microsoft AI School</strong>에서 인공지능 기술을 융합하는 개발자를 꿈꿉니다.
+        </p>
+        <div class="flex space-x-4">
+            <a href="#experience" class="px-8 py-3 bg-blue-600 rounded-lg font-semibold hover:bg-blue-700 transition shadow-lg shadow-blue-500/20">경력 보기</a>
+            <a href="#skills" class="px-8 py-3 glass-card rounded-lg font-semibold transition">보유 자격증</a>
+        </div>
+    </header>
+
+    <!-- Content Sections -->
+    <main class="max-w-5xl mx-auto px-6 pb-32">
+        
+        <!-- About Me -->
+        <section id="about" class="py-24">
+            <h2 class="text-3xl font-bold mb-12 flex items-center">
+                <span class="w-8 h-1 bg-blue-500 mr-4"></span> 소개
+            </h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="glass-card p-8 rounded-2xl">
+                    <p class="text-gray-300 leading-relaxed italic">
+                        "기계설계로 시작해 스마트 금형과 기계융복합공학을 전공하며 이론과 실무를 동시에 쌓아왔습니다. 
+                        현장의 하드웨어적 구조를 완벽히 이해하는 강점을 인공지능 소프트웨어에 녹여내겠습니다."
+                    </p>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-4">
+                        <i class="fas fa-history text-blue-500"></i>
+                        <span>실무 경력 5년 3개월 (금형/가공/관리)</span>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <i class="fas fa-graduation-cap text-blue-500"></i>
+                        <span>기계융복합공학 학사 </span>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <i class="fas fa-code text-blue-500"></i>
+                        <span>Microsoft AI School 교육 중</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="py-24 border-t border-white/5">
+            <h2 class="text-3xl font-bold mb-12 flex items-center">
+                <span class="w-8 h-1 bg-blue-500 mr-4"></span> 주요 경력
+            </h2>
+            <div class="space-y-12 timeline-border ml-4 pl-8">
+                <div class="relative">
+                    <div class="absolute -left-[41px] top-1 w-4 h-4 rounded-full bg-blue-500 border-4 border-black"></div>
+                    <h3 class="text-xl font-bold">현장 관리자 및 엔지니어 (5년 3개월)</h3>
+                    <p class="text-blue-400 mb-2">총 경력</p>
+                    <div class="grid md:grid-cols-2 gap-6 mt-4">
+                        <div class="glass-card p-6 rounded-xl">
+                            <h4 class="font-bold text-gray-200 mb-2">금형부 (2년)</h4>
+                            <ul class="text-sm text-gray-400 list-disc list-inside space-y-2">
+                                <li>정밀 가공 공정 수행 및 최적화</li>
+                                <li>현장 관리자로서 공정 흐름 제어</li>
+                                <li>측정기 관리 및 품질 데이터 분석</li>
+                            </ul>
+                        </div>
+                        <div class="glass-card p-6 rounded-xl">
+                            <h4 class="font-bold text-gray-200 mb-2">가공부 (3년)</h4>
+                            <ul class="text-sm text-gray-400 list-disc list-inside space-y-2">
+                                <li>사출 금형 설계 보조 및 유지보수</li>
+                                <li>부품 제작 및 조립 공정 참여</li>
+                                <li>기계 설계 기반 기술 검토</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="py-24 border-t border-white/5">
+            <h2 class="text-3xl font-bold mb-12 flex items-center">
+                <span class="w-8 h-1 bg-blue-500 mr-4"></span> 학력 사항
+            </h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="glass-card p-6 rounded-xl border-l-4 border-l-blue-500">
+                    <span class="text-xs text-gray-500 font-mono">학사 </span>
+                    <h4 class="text-lg font-bold mt-2 mb-1">기계융복합공학과</h4>
+                    <p class="text-sm text-gray-400">4년제 대학교 편입 졸업</p>
+                </div>
+                <div class="glass-card p-6 rounded-xl border-l-4 border-l-purple-500">
+                    <span class="text-xs text-gray-500 font-mono">전문 학사 </span>
+                    <h4 class="text-lg font-bold mt-2 mb-1">스마트금형과</h4>
+                    <p class="text-sm text-gray-400">재직 중 병행 졸업</p>
+                </div>
+                <div class="glass-card p-6 rounded-xl border-l-4 border-l-indigo-500">
+                    <span class="text-xs text-gray-500 font-mono">고교 전공</span>
+                    <h4 class="text-lg font-bold mt-2 mb-1">기계설계과</h4>
+                    <p class="text-sm text-gray-400">특성화고 졸업 및 즉시 취업</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates -->
+        <section id="skills" class="py-24 border-t border-white/5">
+            <h2 class="text-3xl font-bold mb-12 flex items-center">
+                <span class="w-8 h-1 bg-blue-500 mr-4"></span> 보유 자격증
+            </h2>
+            <div class="flex flex-wrap gap-4">
+                <span class="badge">사출금형설계 L3</span>
+                <span class="badge">전산응용기계제도기능사</span>
+                <span class="badge">3D프린터운용기능사</span>
+                <span class="badge">설비보존기능사</span>
+                <span class="badge">지게차운전기능사</span>
+            </div>
+        </section>
+
+        <!-- Current Focus -->
+        <section id="future" class="py-24 border-t border-white/5">
+            <div class="bg-gradient-to-r from-blue-600/20 to-purple-600/20 p-12 rounded-3xl text-center border border-white/10">
+                <h2 class="text-3xl font-bold mb-6">Current Mission</h2>
+                <div class="inline-block mb-6 px-4 py-2 bg-blue-600 rounded-full font-bold">
+                    Microsoft AI School
+                </div>
+                <p class="text-xl text-gray-300 mb-8">
+                    현장에서의 기계적 감각과 AI 기술을 결합하여,<br>
+                    <strong>스마트 팩토리 및 공정 지능화</strong> 분야의 혁신을 이끄는 개발자가 되겠습니다.
+                </p>
+                <div class="flex justify-center space-x-6 text-2xl">
+                    <a href="#" class="hover:text-blue-500 transition"><i class="fab fa-github"></i></a>
+                    <a href="#" class="hover:text-blue-500 transition"><i class="fas fa-envelope"></i></a>
+                    <a href="#" class="hover:text-blue-500 transition"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/5 text-center text-gray-500 text-sm">
+        <p>&copy; 2026 신동주 Portfolio. Engineering to Artificial Intelligence.</p>
+    </footer>
+
+</body>
+</html>
